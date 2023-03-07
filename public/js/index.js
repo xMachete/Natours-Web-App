@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { login, logout } from './login';
-import { updateSettings } from '/.updateSettings';
+import { updateSettings } from './updateSettings';
 
 //DOM Elements
 const loginForm = document.querySelector('.form--login');
@@ -10,7 +10,7 @@ const updatePasswordForm = document.querySelector('.form-user-password');
 //Delegation
 if (loginForm)
   loginForm.addEventListener('click', (e) => {
-    console.log('Loggin form clicked!!!');
+    // console.log('Loggin form clicked!!!');
     e.preventDefault();
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;

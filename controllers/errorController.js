@@ -62,7 +62,7 @@ const handleDuplicateFieldsDB = (err) => {
   //   const value = err.errmsg.match(/(["'])(?:(?=(\\?))\2.)*?\1/);
   //Dobijam drugaciji err objekat nego Jonas
   const value = err.keyValue.name;
-  console.log(value);
+  // console.log(value);
   const message = `Duplicate field value: ${value}. Please use another one`;
   return new AppError(message, 400);
 };
